@@ -28,6 +28,6 @@ let serve = http.createServer((req,res)=>{
     }
     res.end("404");//404
 })
-serve.listen(3000,function(){
-    console.log("服务器3000端口启动")
+serve.listen(3001,function(){
+    console.log("服务器3001端口启动")
 })

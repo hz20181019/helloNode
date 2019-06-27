@@ -22,12 +22,12 @@ let serve = http.createServer((req,res)=>{
         return res.end(JSON.stringify(arr));
         //数组转json是JSON.stringify()
     }
-    //localhost:3000/admin 访问
+    //localhost:4000/admin 访问
     if(pathname==="/admin"){
         return res.end("admin")//admin
     }
     res.end("404");//404
 })
-serve.listen(3000,function(){
-    console.log("服务器3000端口启动")
+serve.listen(4000,function(){
+    console.log("服务器4000端口启动")
 })
